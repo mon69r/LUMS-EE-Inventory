@@ -7,13 +7,9 @@ I want to browse all the components present in the inventory
 
 Scenario: See inventory
 
- When I press "Inventory"
+ When I press "See all Components"
  Then I should have the following components:
 
- | Name                    | model         | Quantity | Detail | Price| Remarks|
- | MicroController         | PIC16F877a    | 10       | blah   | 10   | no     |
- | MicroController         | PIC16F878b    | 10       | blah   | 10   | no     |
- | MicroController         | PIC16F879a    | 10       | blah   | 10   | no     |
- | MicroController         | PIC16F874a    | 10       | blah   | 10   | no     |
- | MicroController         | PIC16F875a    | 10       | blah   | 10   | no     |
-  
+ | Name            | model   | Quantity | Detail | Price| Remarks| User|
+ | arduino         | mega    | 45       |        |      |        |  55 |
+ 
