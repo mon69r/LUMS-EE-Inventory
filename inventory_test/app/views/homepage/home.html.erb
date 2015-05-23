@@ -6,8 +6,25 @@
     <a href="http://www.lums.edu.pk/">website</a>
   </h2>
 
+<% provide(:title, "Log in") %>
+<h1>Log in</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:homepage, url: login_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-success"%>
+    <% end %>
+  </div>
+</div>
+
   
 </div>
 
-<%= link_to image_tag("LUMS.png", alt: "LUMS logo"),
-            'http://lums.edu.pk/' %>
+<%= link_to image_tag("http://lums.edu.pk/updata/websites/tiny/logo.png", alt: "LUMS logo"),'http://lums.edu.pk/' %>

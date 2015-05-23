@@ -1,0 +1,24 @@
+<h1>Welcome Admin</h1>
+
+
+
+<table class="table  table-bordered">
+
+    <tr>
+    	<td><%= link_to content_tag(:button, "Add Students", :type=>:submit,class: "btn btn-success btn-block"),   '/users/new' %></td>
+    	<td><%= link_to content_tag(:button, "Add Components", :type=>:submit,class: "btn btn-success btn-block"),   '/components/new' %></td>
+	</tr>
+    <tr>
+    	<td><%= link_to content_tag(:button, "See all Students", :type=>:submit,class: "btn btn-success btn-block"),   'users#index' %></td>
+    	<td><%= link_to content_tag(:button, "See all Components", :type=>:submit,class: "btn btn-success btn-block"),   'components#index' %></td>
+    </tr>
+    
+    <tr>
+    	<td><%= link_to content_tag(:button, "Reomove Student", :type=>:submit,class: "btn btn-success btn-block"),   'users#destroy' %></td>
+    	
+        <td><%= link_to content_tag(:button, "Reomove Component", :type=>:submit,class: "btn btn-success btn-block"),   'components#destroy' %></td>
+    </tr>
+
+    
+</table>
+

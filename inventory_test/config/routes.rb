@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   resources :components
 
   resources :users
@@ -7,6 +9,13 @@ Rails.application.routes.draw do
 
 
   get 'homepage/home'
+ 
+
+  post   'login'   => 'homepage#login'
+  
+  
+  match ':controller(/:action(/:id))', :via =>[:get,:post]
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

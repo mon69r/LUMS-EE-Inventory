@@ -14,3 +14,7 @@
  *= require_self
  */
 
+/* navbar */
+.navbar-default {
+    color: #D5D5D5;
+}
