@@ -9,21 +9,28 @@
 
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-default">
+    <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to image_tag("http://lums.edu.pk/updata/websites/tiny/logo.png", alt: "LUMS logo"),
+        <%= link_to image_tag("http://lums.edu.pk/updata/websites/original/1_20140328112759.png", alt: "LUMS logo"),
           'http://lums.edu.pk/' %>
 
         
-        <nav>
+ <!--       <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Log in", '#' %></li>
           </ul>
-        </nav>
+        </nav>   -->
+   
       </div>
     </header>
+
+     <br> 
+
+
     <div class="container">
+     <br>
       <%= yield %>
+     
       <%= render 'layouts/footer' %>
 
     </div>
